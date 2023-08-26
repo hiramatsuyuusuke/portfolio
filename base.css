@@ -5,18 +5,20 @@ body {
 	line-height:1.5;	/*行の高さを1.5倍にする*/
 	color:#00aa00;		/*文字の色を変える*/
 }
-/*=============================
-メインメニュー
-===============================*/
-ul#menu {
-		width:960px; height:50px; /*メインメニュー部分の幅と高さ*/
+/*=========================================
+メインメニュ－
+===========================================*/
+ul#menu{
+	width:960px; height:50px;	/*メインメニュー部分の幅と高さ*/
 }
-li {
+#menu li {
 	list-style-type:none;	/*リストマーカー無しにする*/
 	display:inline;		/*リスト項目をインライン表示にする*/
 	float:left;			/*リスト項目を横に並べる*/
 }
 #menu li a {
-		display:block;		/*リンク部分をブロック表示にする*/
-		width:240px; height:35px;	/*幅と高さ*/
+	background-color:navy;	/*背景色*/
+	color:#ffffff;			/*文字色*/
+	display:block;		/*リンク部分をブロック表示にする*/
+	width:240px; height:35px;	/*幅と高さ*/
 }
