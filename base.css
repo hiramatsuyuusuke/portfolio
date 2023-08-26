@@ -9,7 +9,7 @@ body {
 メインメニュー
 ===============================*/
 ul#menu {
-		width:760px; height:50px; /*メインメニュー部分の幅と高さ*/
+		width:960px; height:50px; /*メインメニュー部分の幅と高さ*/
 }
 li {
 	list-style-type:none;	/*リストマーカー無しにする*/
