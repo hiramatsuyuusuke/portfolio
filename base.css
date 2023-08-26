@@ -7,6 +7,7 @@
 }
 body {
 	background-color:#cccccc;		/*ページ全体の背景色*/
+	background-image:url("images/bg_body.png");		/*ウェブページ全体の背景画像*/
 	font-size:95%;		/*フォントサイズを95%にする*/
 	font-family: "MS ゴシック",sans-serif;	/*フォントの種類をゴシック系にする*/
 	line-height:1.5;	/*行の高さを1.5倍にする*/
@@ -15,13 +16,30 @@ body {
 div#pagebody{
 		width:1000px; margin:0 auto;	 /*内容全体をセンタリング*/
 		background-color:#ffffff;		/*内容全体の背景色*/
+		background-image:url("images/bg_pagebody.png");	/*コンテンツ全体の背景画像*/
+		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
 }
+img {border:0;}
+
+/*=========================================
+ヘッダ
+===========================================*/
+div#header {
+		height:80px;		/*ヘッダ部分の高さ*/
+}
+div#header h1 {
+		padding:10px 0px 5px 20px;	/*見出しの位置調整*/
+		font-size:18px;				/*フォントのサイズ*/
+		font-family:Arial, Helvetica, sans-serif;	/*フォントの種類*/
+}
+div#header h1 a{text-decoration:none;}	/*リンクの下線を無くす*/
 
 /*=========================================
 メインメニュ－
 ===========================================*/
 ul#menu{
 	width:960px; height:50px;	/*メインメニュー部分の幅と高さ*/
+	margin:0px 20px;
 }
 #menu li {
 	list-style-type:none;	/*リストマーカー無しにする*/
