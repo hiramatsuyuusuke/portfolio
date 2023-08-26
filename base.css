@@ -17,9 +17,3 @@ ul#menu{
 	display:inline;		/*リスト項目をインライン表示にする*/
 	float:left;			/*リスト項目を横に並べる*/
 }
-#menu li a {
-	background-color:navy;	/*背景色*/
-	color:#ffffff;			/*文字色*/
-	display:block;		/*リンク部分をブロック表示にする*/
-	width:240px; height:35px;	/*幅と高さ*/
-}
