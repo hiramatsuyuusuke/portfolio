@@ -1,11 +1,22 @@
 @charset "utf-8";
+/*========================================================
+全般的なスタイル
+==========================================================*/
+*{
+	margin:0; padding:0;		/*全要素のマージン・パディングをリセット*/
+}
 body {
-	background-color:#000000;	/*ページ全体の背景色*/
+	background-color:#cccccc;		/*ページ全体の背景色*/
 	font-size:95%;		/*フォントサイズを95%にする*/
 	font-family: "MS ゴシック",sans-serif;	/*フォントの種類をゴシック系にする*/
 	line-height:1.5;	/*行の高さを1.5倍にする*/
 	color:#00aa00;		/*文字の色を変える*/
 }
+div#pagebody{
+		width:1000px; margin:0 auto;	 /*内容全体をセンタリング*/
+		background-color:#ffffff;		/*内容全体の背景色*/
+}
+
 /*=========================================
 メインメニュ－
 ===========================================*/
@@ -15,5 +26,21 @@ ul#menu{
 #menu li {
 	list-style-type:none;	/*リストマーカー無しにする*/
 	display:inline;		/*リスト項目をインライン表示にする*/
-	float:left;			/*リスト項目を横に並べる*/
+	float:left;
 }
+#menu li a {
+	background-color:#000080;	/*背景色*/
+	color:#ffffff;			/*文字色*/
+	display:block;		/*リンク部分をブロック表示にする*/
+	width:240px; height:35px;	/*幅と高さ*/
+	padding:15px 0px 0px 0px;	/*上パディング*/
+	text-align:center;			/*テキストをセンター揃えにする*/
+	text-decoration:none;		/*リンク部分を下線無しにする*/
+	background-image:url(images/bg_menu1.png);	/*背景画像を指定*/
+	background-repeat:no-repeat;				/*背景画像を繰り返さない*/
+}
+#menu li a:hover {
+		background-color:#0000bb;	/*リンクにマウスが乗ったら背景色に変更する.*/
+		background-image:url(images/bg_menu2.png);	/*リンクにマウスが乗ったら背景画像を変更する*/
+}
+
