@@ -22,25 +22,26 @@
     
     <!-- ヘッダー -->
     <div id="header">
-    <h1 id="Home"><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
+    <h1><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
     </div>
 
     <!-- メインメニュー -->
     <ul id="menu">
-    <li><a href="#Home">Home</a></li>
+    <li><a href="#header">Home</a></li>
     <li><a href="#Skills">Skills</a></li>
     <li><a href="#Products">Products</a></li>
     </ul>
 
-    <!-- ヘッダ画像 -->
-    <div id="img_index">
-    <img src="images/img_index.png" alt="portfolio">
+    <!-- Home画像 -->
+    <div  id="Home">
+    <h2>Home</h2>      
+    <img src="images/img_index.png" alt="Home"> 
     </div>
 
     <!-- Skills項目 -->
     <div id="Skills">
     <h2>Skills</h2>
-    <h4><a href="#Home">Homeに戻る</a></h4>
+    <h4><a href="#header">Back to home</a></h4>
     </div>
 
     <div id="Cpp">
@@ -50,7 +51,7 @@
     <div id="Cpp_skill">
     <p>
     Non-semantic segmentationの評価用データセット(BSDS)を用いて
-    segmentationの評価を行っていました。Opencvを用いて、画像処理モデルを作成していました。
+    segmentationの評価を行っていました。Opencvを用いて、画像処理を行うモデルを作成していました。
     </p>
     </div>   
 
@@ -62,25 +63,36 @@
     <p>
     C++で書いたSegmentation評価用のソースや勾配法のソースをPythonに書き直しました。
     書き直すに当たり、Numpyのインデクシングを用いて高速化を行ないました。
-    現在、Pythonを用いて機械学習を学んでいます。   
+    現在、scikit-learnやPyTorchを用いて機械学習を学んでいます。   
     </p>
     </div>
 
     <div id="HTML">
     <img src="images/index0003.gif" alt="HTML, CSS"> 
-    <h3>HTML, CSS</h3> 
+    <h3>HTML, CSS, Javascript</h3> 
+    </div>
+    <div id="HTML_skill">
     <p>
-    このPortfolioのページを作るに当たって、HTMLとCSSを学びました。
+    このPortfolioページの作成に当たり、HTML、CSS、Javascriptを学び直しました。
     </p>
     </div>
 
-    <h2 id="Products">Products</h2>
- 
+    <!-- Skills項目 -->
+    <div id="Products">
+    <h2>Products</h2>
+    <h4><a href="#header">Back to home</a></h4>
+    </div>
+
+
+    <div id="Product1">
     <img src="images/product1.gif" alt="HTML, CSS"> 
     <h3>Product</h3> 
+    </div>
+    <div id="Product1_explain">
     <p>
     Product
     </p>
+    </div>
 
 </div>
 </body>

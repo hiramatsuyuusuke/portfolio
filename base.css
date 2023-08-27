@@ -14,7 +14,7 @@ body {
 	color:#00aa00;		/*文字の色を変える*/
 }
 div#pagebody{
-		width:1000px; height:1300px; margin:0 auto;	 /*内容全体をセンタリング*/
+		width:1000px; height:1600px; margin:0 auto;	 /*内容全体をセンタリング*/
 		background-color:#ffffff;		/*内容全体の背景色*/
 		background-image:url("images/bg_pagebody.png");	/*コンテンツ全体の背景画像*/
 		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
@@ -65,13 +65,16 @@ ul#menu{
 /*===================================================
 ヘッダ画像
 =====================================================*/
-#img_index{
+#Home{
+		margin:0px 20px;
 		width:960px; height:360px;		/*トップページのヘッダ画像の表示サイズを指定*/
-		margin:5px 20px;				/*マージン*/
+		padding:20px 0px 0px 0px;	/*上パディング*/	
+		text-align:center;			/*テキストをセンター揃えにする*/
+		color:navy;		/*文字の色を変える*/	
 }
 
 /*===================================================
-Skills項目
+Skillsの項目
 =====================================================*/
 /* Skillsタイトル */
 #Skills{
@@ -82,51 +85,83 @@ Skills項目
 /* Skills内容 */
 #Cpp{
 	position: absolute;
-	top:580px;
+	top:600px;
 	left:150px;
 	padding:20px 0px 0px 0px;
 	display:block;		/*ブロック表示にする*/
-	width:280px; height:320px;	/*幅と高さ*/
+	width:280px; height:350px;	/*幅と高さ*/
 	text-align:center;			/*テキストをセンター揃えにする*/	
 	background-color:#ffffff;	
 	color:#000000;		/*文字の色を変える*/			
 }
 #Cpp_skill{
 	position: absolute;
-	top:730px;
+	top:770px;
 	left:170px;
 	width:240px; height:50px;	/*幅と高さ*/
 	color:#000000;		/*文字の色を変える*/
 }
 #Python{
 	position: absolute;
-	top:580px;
+	top:600px;
 	left:470px;
 	padding:20px 0px 0px 0px;	
 	display:block;		/*リンク部分をブロック表示にする*/
-	width:280px; height:320px;	/*幅と高さ*/	
+	width:280px; height:350px;	/*幅と高さ*/	
 	text-align:center;
 	background-color:#ffffff;
 	color:#000000;		/*文字の色を変える*/		
 }
 #Python_skill{
 	position: absolute;
-	top:730px;
+	top:770px;
 	left:490px;
 	width:240px; height:50px;	/*幅と高さ*/
 	color:#000000;		/*文字の色を変える*/		
 }
 #HTML{
 	position: absolute;
-	top:580px;
-	left:850px;
-	padding:20px 0px 0px 20px;
+	top:600px;
+	left:790px;
+	padding:20px 0px 0px 0px;
 	display:block;		/*リンク部分をブロック表示にする*/
-	width:200px; height:250px;	/*幅と高さ*/
+	width:280px; height:350px;	/*幅と高さ*/
+	text-align:center;
 	background-color:#ffffff;
+	color:#000000;		/*文字の色を変える*/		
+}
+#HTML_skill{
+	position: absolute;
+	top:770px;
+	left:810px;
+	width:240px; height:50px;	/*幅と高さ*/
+	color:#000000;		/*文字の色を変える*/		
 }
 
+/*===================================================
+Productsの項目
+=====================================================*/
+/* Productsタイトル */
 #Products{
 	margin:500px 0px 0px 0px;	/*上マージン*/	
 	text-align:center;			/*テキストをセンター揃えにする*/
+	color:navy;		/*文字の色を変える*/		
+}
+#Product1{
+	position: absolute;
+	top:1170px;
+	left:150px;
+	padding:20px 0px 0px 0px;
+	display:block;		/*ブロック表示にする*/
+	width:280px; height:350px;	/*幅と高さ*/
+	text-align:center;			/*テキストをセンター揃えにする*/	
+	background-color:#ffffff;	
+	color:#000000;		/*文字の色を変える*/			
+}
+#Product1_explain{
+	position: absolute;
+	top:1390px;
+	left:170px;
+	width:240px; height:50px;	/*幅と高さ*/
+	color:#000000;		/*文字の色を変える*/
 }
