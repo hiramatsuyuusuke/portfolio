@@ -84,20 +84,35 @@ Skillsの項目
 }
 /* Skills内容 */
 #Skills_contests li {
-	margin:0px 20px 0px 0px;	/*上マージン*/		
+	margin:0px 0px 0px 40px;	/*左マージン*/		
 	width:240px;
 	display:block;		/*リンク部分をブロック表示にする*/
 	width:280px; height:350px;	/*幅と高さ*/
 	background-color:#ffffff;	
 	float:left;			/*リスト項目を横に並べる*/
 }
+#Skills_contests li img {
+	padding:10px 0px 0px 0px;	/*上パディング*/		
+	width: 40%;
+	margin: auto;
+	display: block;
+}
+#Skills_contests li h3 {	
+	margin:10px 0px 0px 0px;	/*上マージン*/		
+	text-align:center;			/*テキストをセンター揃えにする*/	
+}
+#Skills_contests li p {
+	margin:20px 0px 0px 20px;	/*上、左マージン*/		
+	width:240px;	
+}
 
 /*===================================================
 Productsの項目
 =====================================================*/
 /* Productsタイトル */
-#Products{
-	margin:500px 0px 0px 0px;	/*上マージン*/	
+#Products {
+	padding:20px 0px 0px 0px;	/*上パディング*/		
+	margin:410px 0px 0px 0px;	/*上マージン*/	
 	text-align:center;			/*テキストをセンター揃えにする*/
 	color:navy;		/*文字の色を変える*/		
 }
