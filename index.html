@@ -6,19 +6,30 @@
 <title>prtfolio</title>
 </head>
 <body>
+<!--
+<script type="text/javascript">
+    var array1 = new Array(10);   
+    for (var i = 0; i < 10; i++) {
+        array1[i]=i*2;
+    }    
+    for (var i = 0; i < 10; i++) {
+        document.write (array1[i]);
+    }
+    document.write('<img src="images/index0001.gif" alt="C++ icon">')
+</script>
+--> 
 <div id="pagebody">
     
     <!-- ヘッダー -->
     <div id="header">
-    <h1><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
+    <h1 id="Home"><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
     </div>
 
     <!-- メインメニュー -->
     <ul id="menu">
-    <li><a href="index.html">home</a></li>
-    <li><a href="skills.html">skills</a></li>
-    <li><a href="products.html">products</a></li>
-    <li><a >mail</a></li>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Skills">Skills</a></li>
+    <li><a href="#Products">Products</a></li>
     </ul>
 
     <!-- ヘッダ画像 -->
@@ -27,23 +38,42 @@
     </div>
 
     <!-- インフォメーション -->
-    <h2>Skills</h2>
+    <h2 id="Skills">Skills</h2>
+
+    <div id="Cpp">
     <img src="images/index0001.gif" alt="C++ icon">
     <h3>C++</h3>
+    </div>
+    <div id="Cpp_explain">
     <p>
     C++を用いて画像処理などを行なっていました。
     </p>
+    </div>   
+
+
+    <div id="Python">
     <img src="images/index0002.gif" alt="Python icon">   
     <h3>Python</h3>
     <p>
     機械学習を用いるためにPythonを学んでいます。
     </p>
+    </div>
+
+    <div id="HTML">
     <img src="images/index0003.gif" alt="HTML, CSS"> 
     <h3>HTML, CSS</h3> 
     <p>
     このPortfolioのページを作るに当たって、HTMLとCSSを学びました。
     </p>
-    <h2>Products</h2>
+    </div>
+
+    <h2 id="Products">Products</h2>
+ 
+    <img src="images/product1.gif" alt="HTML, CSS"> 
+    <h3>Product</h3> 
+    <p>
+    Product
+    </p>
 
 </div>
 </body>
