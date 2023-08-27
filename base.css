@@ -69,40 +69,52 @@ ul#menu{
 		width:960px; height:360px;		/*トップページのヘッダ画像の表示サイズを指定*/
 		margin:5px 20px;				/*マージン*/
 }
+
+/*===================================================
+Skills項目
+=====================================================*/
+/* Skillsタイトル */
 #Skills{
 	padding:20px 0px 0px 0px;	/*上パディング*/	
 	text-align:center;			/*テキストをセンター揃えにする*/
+	color:navy;		/*文字の色を変える*/		
 }
-#Products{
-	margin:500px 0px 0px 0px;	/*上マージン*/	
-	text-align:center;			/*テキストをセンター揃えにする*/
-}
+/* Skills内容 */
 #Cpp{
 	position: absolute;
 	top:580px;
 	left:150px;
 	padding:20px 0px 0px 0px;
 	display:block;		/*ブロック表示にする*/
-	width:200px; height:250px;	/*幅と高さ*/
+	width:280px; height:320px;	/*幅と高さ*/
+	text-align:center;			/*テキストをセンター揃えにする*/	
 	background-color:#ffffff;	
-	text-align:center;			/*テキストをセンター揃えにする*/		
+	color:#000000;		/*文字の色を変える*/			
 }
-#Cpp_explain{
+#Cpp_skill{
 	position: absolute;
-	top:720px;
+	top:730px;
 	left:170px;
-	display:block;		/*ブロック表示にする*/
-	width:180px; height:50px;	/*幅と高さ*/
-	background-color:#ffffff;	
+	width:240px; height:50px;	/*幅と高さ*/
+	color:#000000;		/*文字の色を変える*/
 }
 #Python{
 	position: absolute;
 	top:580px;
-	left:390px;
-	padding:20px 0px 0px 20px;
+	left:470px;
+	padding:20px 0px 0px 0px;	
 	display:block;		/*リンク部分をブロック表示にする*/
-	width:180px; height:250px;	/*幅と高さ*/
+	width:280px; height:320px;	/*幅と高さ*/	
+	text-align:center;
 	background-color:#ffffff;
+	color:#000000;		/*文字の色を変える*/		
+}
+#Python_skill{
+	position: absolute;
+	top:730px;
+	left:490px;
+	width:240px; height:50px;	/*幅と高さ*/
+	color:#000000;		/*文字の色を変える*/		
 }
 #HTML{
 	position: absolute;
@@ -112,4 +124,9 @@ ul#menu{
 	display:block;		/*リンク部分をブロック表示にする*/
 	width:200px; height:250px;	/*幅と高さ*/
 	background-color:#ffffff;
+}
+
+#Products{
+	margin:500px 0px 0px 0px;	/*上マージン*/	
+	text-align:center;			/*テキストをセンター揃えにする*/
 }
