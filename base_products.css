@@ -1,0 +1,77 @@
+@charset "utf-8";
+/*========================================================
+全般的なスタイル
+==========================================================*/
+*{
+	margin:0; padding:0;		/*全要素のマージン・パディングをリセット*/
+}
+body {
+	background-color:#cccccc;		/*ページ全体の背景色*/
+	background-image:url("images/bg_body.png");		/*ウェブページ全体の背景画像*/
+	font-size:95%;		/*フォントサイズを95%にする*/
+	font-family: "MS ゴシック",sans-serif;	/*フォントの種類をゴシック系にする*/
+	line-height:1.5;	/*行の高さを1.5倍にする*/
+	color:#000000;		/*文字の色を変える*/
+}
+
+
+
+/*run_test*/
+#run_test button {
+    width:100px; height:50px;
+    position:absolute;
+    left:  150px;                /* 左からの位置指定 */
+    top: 50px;                  /* 上からの位置指定 */	   
+    color:navy;		/*文字の色を変える*/	
+}
+
+/*テスト*/
+#test_output0 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 50px;                  /* 上からの位置指定 */	
+}
+#test_output1 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 70px;                  /* 上からの位置指定 */	
+}
+#test_output2 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 90px;                  /* 上からの位置指定 */	
+}
+#test_output3 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 110px;                  /* 上からの位置指定 */	
+}
+#test_output4 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 130px;                  /* 上からの位置指定 */	
+}
+#test_output5 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 150px;                  /* 上からの位置指定 */	
+}
+#test_output6 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 170px;                  /* 上からの位置指定 */	
+}
+#test_output7 {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 190px;                  /* 上からの位置指定 */	
+}
+

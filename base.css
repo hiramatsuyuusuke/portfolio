@@ -117,4 +117,16 @@ Productsの項目
 	color:navy;		/*文字の色を変える*/		
 }
 
+#Product1 {
+	margin:50px 0px 0px 0px;	/*上マージン*/		
+	text-align:center;			/*テキストをセンター揃えにする*/	
+}
 
+
+/*テスト*/
+#test_output {
+
+	position:absolute;
+    left:  50px;                /* 左からの位置指定 */
+    top: 50px;                  /* 上からの位置指定 */	
+}
