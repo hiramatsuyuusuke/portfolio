@@ -14,7 +14,7 @@ body {
 	color:#000000;		/*文字の色を変える*/
 }
 div#pagebody{
-		width:1000px; height:1600px; margin:0 auto;	 /*内容全体をセンタリング*/
+		width:1000px; height:1500px; margin:0 auto;	 /*内容全体をセンタリング*/
 		background-color:#ffffff;		/*内容全体の背景色*/
 		background-image:url("images/bg_pagebody.png");	/*コンテンツ全体の背景画像*/
 		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
@@ -67,7 +67,7 @@ ul#menu{
 =====================================================*/
 #Home{
 		margin:0px 20px;
-		width:960px; height:360px;		/*トップページのヘッダ画像の表示サイズを指定*/
+		width:960px; height:400px;		/*トップページのヘッダ画像の表示サイズを指定*/
 		padding:20px 0px 0px 0px;	/*上パディング*/	
 		text-align:center;			/*テキストをセンター揃えにする*/
 		color:navy;		/*文字の色を変える*/	
