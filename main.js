@@ -14,7 +14,10 @@ const drawTextAsync = async () => {
     await sleep(100);
     const word = "22222222";
     for (var i = 0; i < word.length; i++) {
-        const content = word.substr(0, i+1);
+        //const content = word.substr(0, i+1);
+
+        canvas.style.left = 150 + (i * 10) + 'px';       
+        const content = "img";       
         canvas.innerHTML = content;
         await sleep(100);
     }
