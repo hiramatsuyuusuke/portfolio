@@ -14,7 +14,7 @@ body {
 	color:#000000;		/*文字の色を変える*/
 }
 div#pagebody{
-		width:1000px; height:1500px; margin:0 auto;	 /*内容全体をセンタリング*/
+		width:1000px; height:1100px; margin:0 auto;	 /*内容全体をセンタリング*/
 		background-color:#ffffff;		/*内容全体の背景色*/
 		background-image:url("images/bg_pagebody.png");	/*コンテンツ全体の背景画像*/
 		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
@@ -87,7 +87,7 @@ Skillsの項目
 	margin:0px 0px 0px 40px;	/*左マージン*/		
 	width:240px;
 	display:block;		/*リンク部分をブロック表示にする*/
-	width:280px; height:350px;	/*幅と高さ*/
+	width:280px; height:380px;	/*幅と高さ*/
 	background-color:#ffffff;	
 	float:left;			/*リスト項目を横に並べる*/
 }
