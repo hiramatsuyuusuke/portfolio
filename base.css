@@ -14,12 +14,12 @@ body {
 	color:#000000;		/*文字の色を変える*/
 }
 div#pagebody{
-		width:1000px; height:1100px; margin:0 auto;	 /*内容全体をセンタリング*/
+		width:1000px; margin:0 auto;	 /*内容全体をセンタリング*/
 		background-color:#ffffff;		/*内容全体の背景色*/
 		background-image:url("images/bg_pagebody.png");	/*コンテンツ全体の背景画像*/
 		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
 }
-img {border:0;}
+img {border:0;}	/*画像のボーダーを0にする*/
 
 /*=========================================
 ヘッダ
@@ -128,4 +128,11 @@ Productsの項目
 	position:absolute;
     left:  50px;                /* 左からの位置指定 */
     top: 50px;                  /* 上からの位置指定 */	
+}
+
+/*====================================
+フッタ
+======================================*/
+div#footer {
+	clear:both;		/*回り込みを解除*/
 }
