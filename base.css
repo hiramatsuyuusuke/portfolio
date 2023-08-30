@@ -85,7 +85,6 @@ Skillsの項目
 /* Skills内容 */
 #Skills_contests li {
 	margin:0px 0px 0px 40px;	/*左マージン*/		
-	width:240px;
 	display:block;		/*リンク部分をブロック表示にする*/
 	width:280px; height:380px;	/*幅と高さ*/
 	background-color:#ffffff;	
