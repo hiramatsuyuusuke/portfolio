@@ -9,8 +9,8 @@
     visibility:hidden;		/*最初は非表示設定にする*/
 	position: fixed;
 	width: 64px;
-	height: 70px;	
-	right: 70px;
+	height: 10px;	
+	right: 10px;
 	bottom:100px;
 	transition: 1s;
 	background: #ffffff;
@@ -64,8 +64,8 @@ ul#menu{
 	background-color:#000080;	/*背景色*/
 	color:#ffffff;			/*文字色*/
 	display:block;		/*リンク部分をブロック表示にする*/
-	width:240px; height:35px;	/*幅と高さ*/
-	padding:15px 0px 0px 0px;	/*上パディング*/
+	width:240px; height:40px;	/*幅と高さ*/
+	padding:10px 0px 0px 0px;	/*上パディング*/
 	text-align:center;			/*テキストをセンター揃えにする*/
 	text-decoration:none;		/*リンク部分を下線無しにする*/
 	background-image:url(images/bg_menu1.png);	/*背景画像を指定*/
