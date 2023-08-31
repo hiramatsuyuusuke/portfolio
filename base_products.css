@@ -11,7 +11,7 @@ body {
 	background-image:url("images/bg_body.png");		/*ウェブページ全体の背景画像*/
 	font-size:50%;		/*フォントサイズを95%にする*/
 	font-family: "MS ゴシック",sans-serif;	/*フォントの種類をゴシック系にする*/
-	line-height:0.5;	/*行の高さを1.5倍にする*/
+	line-height:1.5;	/*行の高さを1.5倍にする*/
 	color:#000000;		/*文字の色を変える*/
 }
 #product1 {
@@ -89,3 +89,15 @@ body {
     top: 120px;                  /* 上からの位置指定 */	
 }
 
+#demo {
+
+	position:absolute;
+    left:  20px;                /* 左からの位置指定 */
+    top: 250px;                  /* 上からの位置指定 */	
+}
+#demo .result {
+
+	position:absolute;
+    left:  20px;                /* 左からの位置指定 */
+    top: -50px;                  /* 上からの位置指定 */	
+}

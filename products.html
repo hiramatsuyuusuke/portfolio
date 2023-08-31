@@ -19,6 +19,7 @@
         <h4><a href="index.html">Back to home</a></h4>     
         </div>
 
+        <!-- 走行位置のテスト表示 -->
         <div id="test_output0"></div>
         <div id="test_output1"></div>
         <div id="test_output2"></div>
@@ -28,16 +29,32 @@
         <div id="test_output6"></div>
         <div id="test_output7"></div>
 
-         <!-- Javascriptの読み込み-->       
-        <script type="text/javascript" src='./main.js' defer></script>
-        
-        <div id="canvas"></div>
+ 
+        <!-- 走行シミュレータJavascriptの部分--> 
 
+        <!-- 走行シミュレータJavascriptの読み込み--> 
+         <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->        
+        <script type="text/javascript" src='./main.js' defer></script>
+        <!-- 描画用id=canvas -->
+        <div id="canvas"></div>
+        <!-- 実行ボタン -->
         <div id="run_test">
             <button onclick="drawTextAsync()">run_test</button>
         </div>
         
 
+         <!-- Vue.jsの読み込み -->
+         <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->
+         <script type="text/javascript" src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>        
+         <script type="text/javascript" src='product2.js' defer></script> 
+
+        <div id="demo">
+            <p class="title">探し物の名前をを入力してください</p>
+            <input v-model="zip">   <!--入力ボックスのzipにする-->
+            <div class="result">
+            {{zip}}を探します <br>       <!-- {{}}でzipの値が表示される -->
+            </div>
+        </div>
 
     </body>
 </html>
