@@ -28,11 +28,11 @@ let pe;
 
 //フィールドの障害物データ
 array_field = [ 0,0,0,0,0,0,0,0,
-                1,0,0,0,0,0,0,0,
-                1,0,0,0,0,0,0,0,
-                1,0,0,1,1,1,1,1,
                 0,0,0,0,0,0,0,0,
-                1,1,1,1,1,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
+                0,0,0,0,0,0,0,0,
                 0,0,0,0,0,0,0,0,
                 0,0,0,0,0,0,0,0];
 
@@ -86,20 +86,23 @@ target7.innerHTML = array7;
 
 
 
+
+
+
+/*先にデータを読み込んでおく*/
+//html側のIDを取得する
+const canvas = document.getElementById("canvas");
+for (var i = 0; i < 63; i++) {
+    const content = '<img src="images_tmp/test_test' +
+    i + '.jpg"  id="view" alt="image">';            
+    canvas.innerHTML = content;
+}
+
 /*=====================================
 画像描画処理
 =======================================*/
 //ボタン連打無効用フラッグ
 let run_flag = 0;
-
-/*ちらつき防止のため、先にデータを読み込んでおく*/
-//html側のIDを取得する
-const canvas = document.getElementById("canvas");
-for (var i = 0; i < 10; i++) {
-    const content = '<img src="images_tmp/test_test' +
-     i + '.jpg"  id="view" alt="image">';            
-    canvas.innerHTML = content;
-}
 
 
 /*非同期処理を開始*/
@@ -118,16 +121,16 @@ const drawTextAsync = async () => {
         pos_y = 7;
 
         //フィールドの初期化
-        array_field = [ 0,0,0,0,0,0,0,0,
+        array_field = [ 0,0,1,0,0,1,1,1,
+                        0,0,0,0,0,0,0,0,
                         1,0,0,0,0,0,0,0,
-                        1,0,0,0,0,0,0,0,
-                        1,0,0,1,1,1,1,1,
+                        0,0,0,1,1,1,1,1,
                         0,0,0,0,0,0,0,0,
                         1,1,1,1,1,0,0,0,
                         0,0,0,0,0,0,0,0,
                         0,0,0,0,0,0,0,0];
         //フィールドの位置エネルギーの初期化
-        pe = 9;
+        pe = 999;
         potential_energy = [pe,pe,pe,pe,pe,pe,pe,pe,
                             pe,pe,pe,pe,pe,pe,pe,pe,
                             pe,pe,pe,pe,pe,pe,pe,pe,
@@ -264,7 +267,7 @@ const drawTextAsync = async () => {
                 pos_x -= 1;
             }
 
-            //ポジションの更新
+            //1次元ポジションの更新
             pos_cur = pos_y * 8 + pos_x;
             //ポジションのアイコンを取得
             array_field[pos_cur] = robo_icon;
@@ -314,13 +317,13 @@ const drawTextAsync = async () => {
             //canvas.style.left = 150 + (i * 10) + 'px';
             //canvas.style.left = 200 + 'px';
             //const content = "img";
-            test_loop = pos_y;
+            //test_loop = pos_y;
             
             const content = '<img src="images_tmp/test_test' +
-            test_loop + '.jpg" id="view" alt="image">';      
+            pos_cur + '.jpg" id="view" alt="image">';      
             canvas.innerHTML = content;
 
-            await sleep(100);
+            await sleep(250);
         }
  
         run_flag = 0;//ボタン連打無効用フラッグ
