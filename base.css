@@ -5,20 +5,6 @@
 *{
 	margin:0; padding:0;		/*全要素のマージン・パディングをリセット*/
 }
-#back-top a{
-    visibility:hidden;		/*最初は非表示設定にする*/
-	position: fixed;
-	width: 64px;
-	height: 10px;	
-	right: 10px;
-	bottom:100px;
-	transition: 1s;
-	background: #ffffff;
-}
-#back-top a:hover{
-	opacity:0.75;
-}
-
 body {
 	background-color:#cccccc;		/*ページ全体の背景色*/
 	background-image:url("images/bg_body.png");		/*ウェブページ全体の背景画像*/
@@ -34,6 +20,27 @@ div#pagebody{
 		background-repeat:repeat-y;						/*背景画像を縦方向に繰り返す*/
 }
 img {border:0;}	/*画像のボーダーを0にする*/
+
+
+/*===============================
+スクロールしてトップに戻るのボタン
+=================================*/
+#back-top a{
+    visibility:hidden;		/*最初は非表示設定にする*/
+	position: fixed;
+	width: 64px;
+	height: 10px;	
+	right: 10px;
+	bottom:100px;
+	transition: 1s;
+	background: #ffffff;
+}
+#back-top a:hover{
+	opacity:0.75;
+}
+
+
+
 
 /*=========================================
 ヘッダ
@@ -77,8 +84,32 @@ ul#menu{
 }
 
 /*===================================================
-ヘッダ画像
+Homeの項目
 =====================================================*/
+/*Homeのドロップダウン*/
+.Home_drop_sub {
+	visibility:hidden;		/*最初は非表示設定にする*/
+	position: absolute;		
+	margin-left: -5px;
+	margin-right: -5px;
+	margin-bottom: -5px;
+	padding: 15px 15px 15px 15px;	
+	width: 200;
+	display: block;
+	background-color: navy;
+	color:white;
+}
+.Home_drop {
+	position: absolute;	
+	margin-left: 500px;
+	margin-top: -135px;	
+	padding-left: 5px;
+	padding-right: 20px;
+	padding-top: 5px;	
+	background-color:navy;	/*背景色*/
+	color:white;
+}
+/*Home画像*/
 #Home{
 		display:block;		/*ブロック表示にする*/
 		background-color:#000080;	/*背景色*/	
@@ -120,6 +151,8 @@ Skillsの項目
 	margin:20px 0px 0px 20px;	/*上、左マージン*/		
 	width:240px;	
 }
+
+
 
 /*====================================
 フッタ
