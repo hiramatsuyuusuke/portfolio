@@ -35,13 +35,19 @@
         <!-- 走行シミュレータJavascriptの読み込み--> 
          <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->        
         <script type="text/javascript" src='./main.js' defer></script>
+
         <!-- 描画用id=canvas -->
-        <div id="canvas"></div>
+        <div id="ode_camera"></div>
+
         <!-- 実行ボタン -->
         <div id="run_test">
             <button onclick="drawTextAsync()">run_test</button>
         </div>
         
+        <!-- 描画用id=canvas -->
+        <canvas id="canvas" >
+            図形を表示するには、canvasタグをサポートしたブラウザが必要です。
+        </canvas>
 
          <!-- Vue.jsの読み込み -->
          <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->
@@ -56,5 +62,7 @@
             </div>
         </div>
 
+
+        
     </body>
 </html>

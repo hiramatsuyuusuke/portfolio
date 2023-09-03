@@ -7,12 +7,14 @@
 	margin:0; padding:0;		/*全要素のマージン・パディングをリセット*/
 }
 body {
+
 	background-color:#cccccc;		/*ページ全体の背景色*/
 	background-image:url("images/bg_body.png");		/*ウェブページ全体の背景画像*/
 	font-size:50%;		/*フォントサイズを95%にする*/
 	font-family: "MS ゴシック",sans-serif;	/*フォントの種類をゴシック系にする*/
 	line-height:1.5;	/*行の高さを1.5倍にする*/
 	color:#000000;		/*文字の色を変える*/
+
 }
 #product1 {
 	font-size:200%;		/*フォントサイズを95%にする*/
@@ -99,5 +101,14 @@ body {
 
 	position:absolute;
     left:  20px;                /* 左からの位置指定 */
-    top: -50px;                  /* 上からの位置指定 */	
+    top: -80px;                  /* 上からの位置指定 */	
 }
+#canvas {
+    position:absolute;
+    left:  20px;                /* 左からの位置指定 */
+    top: 150px;                  /* 上からの位置指定 */	
+
+    background-color:white; width:170px
+}
+
+

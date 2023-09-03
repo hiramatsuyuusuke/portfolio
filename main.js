@@ -91,19 +91,40 @@ target7.innerHTML = array7;
 
 /*先にデータを読み込んでおく*/
 //html側のIDを取得する
-const canvas = document.getElementById("canvas");
+const ode_camera = document.getElementById("ode_camera");
 for (var i = 0; i < 63; i++) {
     const content = '<img src="images_tmp/test_test' +
     i + '.jpg"  id="view" alt="image">';            
-    canvas.innerHTML = content;
+    ode_camera.innerHTML = content;
 }
+
+//図形を描画する。Canvas（<canvas>タグ）を使う。
+const canvas = document.getElementById("canvas");
+if (canvas.getContext) {
+    var context = canvas.getContext('2d');
+    //ここに具体的な描画内容を指定する
+    //左の位置、上の位置、幅、高さ。四角形を描く。
+    context.fillStyle = 'rgb(00,255,0)'; //緑
+    context.fillRect(240,30,30,30);
+
+    context.strokeStyle = 'rgb(00,0,255)'; //
+    context . moveTo(200, 30)   // 新しいサブパスの開始点を座標指定する
+    context . lineTo(230, 40)   // 直前の座標と指定座標を結ぶ直線を引く
+    context . lineTo(200, 50)   // 直前の座標と指定座標を結ぶ直線を引く    
+    context . lineTo(200, 70)   // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(20, 70)    // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(20, 20)    // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(200, 20)   // 直前の座標と指定座標を結ぶ直線を引く   
+    context . closePath()       // 最終座標と開始座標を結んでパスを閉じる
+    context.stroke();
+}
+
 
 /*=====================================
 画像描画処理
 =======================================*/
 //ボタン連打無効用フラッグ
 let run_flag = 0;
-
 
 /*非同期処理を開始*/
 const sleep = (msec) => new Promise(resolve => setTimeout(resolve, msec));
@@ -313,15 +334,10 @@ const drawTextAsync = async () => {
             /*=====================================
             画像描画処理
             =======================================*/
-            //canvas.style.backgroundColor = 'white';    
-            //canvas.style.left = 150 + (i * 10) + 'px';
-            //canvas.style.left = 200 + 'px';
-            //const content = "img";
-            //test_loop = pos_y;
             
             const content = '<img src="images_tmp/test_test' +
             pos_cur + '.jpg" id="view" alt="image">';      
-            canvas.innerHTML = content;
+            ode_camera.innerHTML = content;
 
             await sleep(250);
         }
