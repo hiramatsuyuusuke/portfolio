@@ -27,13 +27,13 @@ body {
 #ode_camera {
     position:absolute;
     top:70px;
-    left:100px;
+    left:10px;
     background-color:white;     
     width:200px;
 }
 #ode_camera2 {
     position:absolute;
-    top:130px;
+    top:70px;
     left:100px;
     background-color:white;     
     width:200px;
