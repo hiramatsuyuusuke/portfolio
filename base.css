@@ -98,6 +98,7 @@ Homeの項目
 	display: block;
 	background-color: navy;
 	color:white;
+	border-radius:20px;	/*角を丸くする*/
 }
 .Home_drop {
 	position: absolute;	
@@ -109,6 +110,7 @@ Homeの項目
 	width:430px; 		/*幅*/
 	background-color:navy;			/*背景色*/
 	color:white;
+	border-radius: 10px;	/*角を丸くする*/
 }
 /*Home画像*/
 #Home{
@@ -119,6 +121,7 @@ Homeの項目
 		text-align:center;			/*テキストをセンター揃えにする*/
 		background-image:url(images/img_index.jpg);
 		color:navy;		/*文字の色を変える*/	
+		border-radius:20px;	/*角を丸くする*/
 }
 
 /*===================================================
@@ -136,6 +139,7 @@ Skillsの項目
 	display:block;					/*ブロック表示にする*/
 	width:280px; height:380px;		/*幅と高さ*/
 	background-color:#ffffff;	
+	border-radius:10px;		/*角を丸くする*/
 	float:left;				/*リスト項目を横に並べる*/
 }
 #Skills_contests li img {
