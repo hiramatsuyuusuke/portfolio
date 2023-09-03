@@ -152,7 +152,11 @@ Skillsの項目
 	margin:20px 0px 0px 20px;	/*上、左マージン*/		
 	width:240px;	
 }
-
+#Skills_contests li h4 a {
+	display:block;					/*ブロック表示にする*/
+	margin:0px 0px 0px 20px;	/*上、左マージン*/		
+	width:240px;	
+}
 
 
 /*====================================
