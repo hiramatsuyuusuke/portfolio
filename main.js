@@ -94,9 +94,20 @@ target7.innerHTML = array7;
 const ode_camera = document.getElementById("ode_camera");
 for (var i = 0; i < 63; i++) {
     const content = '<img src="images_tmp/test_test' +
-    i + '.jpg"  id="view" alt="image">';            
+    i + '.jpg"  id="ode_camera" alt="image">';            
     ode_camera.innerHTML = content;
 }
+/*先にデータを読み込んでおく*/
+//html側のIDを取得する
+const ode_camera2 = document.getElementById("ode_camera2");
+for (var i = 0; i < 63; i++) {
+    const content = '<img src="images_tmp/test' +
+    i + '.jpg"  id="ode_camera2" alt="image">';            
+    ode_camera2.innerHTML = content;
+}
+
+
+
 
 //図形を描画する。Canvas（<canvas>タグ）を使う。
 const canvas = document.getElementById("canvas");
@@ -105,18 +116,22 @@ if (canvas.getContext) {
     //ここに具体的な描画内容を指定する
     //左の位置、上の位置、幅、高さ。四角形を描く。
     context.fillStyle = 'rgb(00,255,0)'; //緑
-    context.fillRect(240,30,30,30);
+    context.fillRect(240,40,30,30);
 
     context.strokeStyle = 'rgb(00,0,255)'; //
-    context . moveTo(200, 30)   // 新しいサブパスの開始点を座標指定する
-    context . lineTo(230, 40)   // 直前の座標と指定座標を結ぶ直線を引く
-    context . lineTo(200, 50)   // 直前の座標と指定座標を結ぶ直線を引く    
-    context . lineTo(200, 70)   // 直前の座標と指定座標を結ぶ直線を引く   
-    context . lineTo(20, 70)    // 直前の座標と指定座標を結ぶ直線を引く   
-    context . lineTo(20, 20)    // 直前の座標と指定座標を結ぶ直線を引く   
-    context . lineTo(200, 20)   // 直前の座標と指定座標を結ぶ直線を引く   
-    context . closePath()       // 最終座標と開始座標を結んでパスを閉じる
+    context . moveTo(200, 40);   // 新しいサブパスの開始点を座標指定する
+    context . lineTo(230, 50);  // 直前の座標と指定座標を結ぶ直線を引く
+    context . lineTo(200, 60);   // 直前の座標と指定座標を結ぶ直線を引く    
+    context . lineTo(200, 80);   // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(20, 80);    // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(20, 30);    // 直前の座標と指定座標を結ぶ直線を引く   
+    context . lineTo(200, 30);   // 直前の座標と指定座標を結ぶ直線を引く   
+    context . closePath();       // 最終座標と開始座標を結んでパスを閉じる
     context.stroke();
+
+    context.font = "20px Arial";
+    context.strokeText("SVM",230,30,100);
+
 }
 
 
@@ -335,9 +350,13 @@ const drawTextAsync = async () => {
             画像描画処理
             =======================================*/
             
-            const content = '<img src="images_tmp/test_test' +
-            pos_cur + '.jpg" id="view" alt="image">';      
+            const content = '<img src="images_tmp/test' +
+            pos_cur + '.jpg" id="ode_camera" alt="image">';      
             ode_camera.innerHTML = content;
+
+            const content2 = '<img src="images_tmp/test_test' +
+            pos_cur + '.jpg" id="ode_camera2" alt="image">';      
+            ode_camera2.innerHTML = content2;           
 
             await sleep(250);
         }

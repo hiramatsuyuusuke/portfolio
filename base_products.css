@@ -24,10 +24,17 @@ body {
 
 
 /*画像を拡大表示*/
-#view {
+#ode_camera {
     position:absolute;
-    top:150px;
-    left:200px;
+    top:70px;
+    left:100px;
+    background-color:white;     
+    width:200px;
+}
+#ode_camera2 {
+    position:absolute;
+    top:130px;
+    left:100px;
     background-color:white;     
     width:200px;
 }
@@ -108,7 +115,7 @@ body {
     left:  20px;                /* 左からの位置指定 */
     top: 150px;                  /* 上からの位置指定 */	
 
-    background-color:white; width:170px
+    background-color:white; width:170px;
 }
 
 
