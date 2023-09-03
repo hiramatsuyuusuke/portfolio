@@ -167,6 +167,9 @@ Skillsの項目
 フッタ
 ======================================*/
 div#footer {
-	clear:both;		/*回り込みを解除*/
-	text-align:center; 	/*センター揃えにする*/
+	clear:both;					/*回り込みを解除*/
+	text-align:center; 			/*センター揃えにする*/
+	height:40px;				/*高さ*/
+	padding:20px 0px 0px 0px;	/*パディング*/
+	font-size:x-small;			/*フォントサイズを小さくする*/
 }
