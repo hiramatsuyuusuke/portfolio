@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="table.css">
+<link rel="stylesheet" href="form.css">
+<title>portfolio contact</title>
+</head>
+<body>
+<div id="pagebody">
+
+        <!-- ヘッダ -->
+        <div id="header">
+        <h1><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
+        </div>
+
+        <!-- メインメニュー -->
+        <ul id="menu">
+                <li><h2><a href="index.html">Home</a></h2></li>
+                <li><h2><a href="index.html#Skills">Skills</a></h2></li>
+                <li><h2><a href="index.html#Products">Products</a></h2></li>
+                <li><h2><a href="contact_form1.html">Contact</a></h2></li>       
+        </ul>       
+
+
+
+        <!--フォームからのお問い合わせ-->
+        <div id="form_table">
+                <h3 id="info0001">お問い合わせ</h3>
+                <form method="post" action="https://ssgform.com/s/NrH2L6CxIoc2" id="form1" name="hiramatsu">
+                <table class="contact">
+                <tr>
+                <th>お問い合わせ区分</th>
+                <td>
+                <label><input type="radio" name="sort" value="1">制作物に関するお問い合わせ</label><br>
+                <label><input type="radio" name="sort" value="2">その他のお問い合わせ</label>
+                </td>
+                </tr>
+                <tr>
+                <th>メールアドレス</th>
+                <td><input type="email" size="30" name="mail" id="mail" required></td>               
+                </tr>
+                <tr>
+                <th>お名前</th>
+                <td><input type="text" size="20" name="namae" id="namae" required></td>
+                </tr>
+                <tr>
+                <th>お問い合わせの内容</th>
+                <td><textarea name="naiyou" cols="40" rows="5" placeholder="できるだけ詳しくご記入ください。" required></textarea></td>
+                </tr>
+                </table>
+                <input type="hidden" name="q" value="sort">
+                <p><input type="submit" alt="送信する"></p>
+                </form>
+
+        </div>
+        <!-- フッタ -->
+        <div id="footer"><small>hiramatsuyuusuke</small></div>
+
+</div>
+</body>
+</html>

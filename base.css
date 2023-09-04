@@ -162,7 +162,7 @@ Skillsの項目
 	width:240px;	
 }
 
-
+/*Productsの項目*/
 #Products {
 	clear:both;					/*回り込みを解除*/
 	color:navy;
@@ -171,6 +171,11 @@ Skillsの項目
 
  }
 
+/*Contactの項目*/
+ #form_table {
+	margin-left:20px;	/*上、左マージン*/	
+
+ }
 /*====================================
 フッタ
 ======================================*/

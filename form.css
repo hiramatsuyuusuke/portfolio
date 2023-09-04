@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/**************************
+入力フォーム
+***************************/
+#form1 input, #form1 textarea {
+    font-size:16px;     /*フォントサイズ*/
+    border:1px solid #999999;       /*ボーダー*/
+    padding:2px;        /*パディング*/
+    border-radius:3px;  /*角丸にする*/
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1) inset; /*影を付ける*/
+}
+#form1 input:focus, #form1 textarea:focus {
+    box-shadow: 0px 0px 5px 2px #ccccee;        /*影をつける*/
+    outline-style:none;             /*アウトライン無しにする*/
+}
+#form1 p input {
+    margin-top:20px;
+    width:100px; height:40px;   /*幅と高さ*/
+}
+#form1 p input:hover {
+    box-shadow: 0px 0px 5px 2px #ccccee;        /*影をつける*/
+}
+#form1 p {
+    text-align:center;  /*センタリング*/
+    text-indent:0;      /*字下げ幅をゼロにする*/
+}
+input[type="text"], input[type="email"] {
+    width:70%;
+}
