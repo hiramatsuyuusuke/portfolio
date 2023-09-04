@@ -93,7 +93,7 @@ target7.innerHTML = array7;
 //html側のIDを取得する
 const ode_camera = document.getElementById("ode_camera");
 for (var i = 0; i < 63; i++) {
-    const content = '<img src="images_tmp/test_test' +
+    const content = '<img src="images_tmp/test' +
     i + '.jpg"  id="ode_camera" alt="image">';            
     ode_camera.innerHTML = content;
 }
@@ -101,7 +101,7 @@ for (var i = 0; i < 63; i++) {
 //html側のIDを取得する
 const ode_camera2 = document.getElementById("ode_camera2");
 for (var i = 0; i < 63; i++) {
-    const content = '<img src="images_tmp/test' +
+    const content = '<img src="images_tmp/test_test' +
     i + '.jpg"  id="ode_camera2" alt="image">';            
     ode_camera2.innerHTML = content;
 }
