@@ -163,6 +163,14 @@ Skillsの項目
 }
 
 
+#Products {
+	clear:both;					/*回り込みを解除*/
+	color:navy;
+	text-align:center;
+	padding:20px 0px 0px 0px;
+
+ }
+
 /*====================================
 フッタ
 ======================================*/
