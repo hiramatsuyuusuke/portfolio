@@ -1,112 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">   
-    <link rel="stylesheet" media="screen and (min-width:481px)" href="base.css">
-    <link rel="stylesheet" media="screen and (max-width:480px)" href="base_sp.css">   
-    <title>prtfolio</title>
-
-    <!-- jqueryの読み込み-->       
-    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
-    <!-- Javascriptの読み込み--> 
-    <script type="text/javascript" src="index.js" defre></script>
-
-    <p id="back-top"><a href="#header"><img src="images/back_to_top.png" alt="TOPへ移動"></a></p>   
+  <meta charset="utf-8">
+  <title></title>
 </head>
-
-
-
 <body>
-
-<div id="pagebody">
-    
-    <!-- ヘッダー -->
-    <div id="header">
-        <h1><img src="images/logo.png" alt="portfolio"></h1>
-    </div>
-
-    <!-- メインメニュー -->
-    <ul id="menu">
-        <li><h2><a href="#menu">Home</a></h2></li>
-        <li><h2><a href="#Skills">Skills</a></h2></li>
-        <li><h2><a href="#Products">Products</a></h2></li>
-        <li><h2><a href="contact_input_form1.html">Contact</a></h2></li>       
-    </ul>
-
-    <!-- Homeの項目 -->
-    <!-- Homeの画像 -->
-    <div  id="Home"></div>
-    <!-- Homeのドロップダウンメニュー -->
-    <div class="Home_drop">
-        <h2>・Simplified Robot Vision Simulater</h2>
-        <li class="Home_drop_sub">
-            Open dynamics engine(ODE)を用いて作成された空間のカメラ画像を用いて、
-            Robot Visionの容易な体験と学習を提供します。
-        </li>
-    </div>
-
-
-    <!-- Skillsの項目 -->
-    <div id="Skills">
-        <h2>Skills</h2>
-        <h4><a href="#header">Back to top</a></h4>
-    </div>
-
-	<div id="Skills_contests">
-        <li>
-            <img src="images/Cpp_logo.png" alt="C++ icon">
-            <h3>C++</h3>
-            <p>
-                Non-semantic segmentationの評価用データセット(BSDS)を用いて
-                segmentationの評価を行っていました。また、Opencvを用いて、画像処理を行うモデルを作成していました。
-                更に、このPortfolioページ内のProductsの作成に当たり、Open Dynamics Engine(ODE)を学び直しました。
-            </p>            
-        </li>
-        <li>
-            <img src="images/python_logo.png" alt="Python icon">
-            <h3>Python</h3>
-            <p>
-                C++で書いたSegmentation評価用のソースや勾配法のソースをPythonに書き直しました。
-                書き直すに当たり、NumPyのインデクシングやSciPyを用いて高速化を行ないました。
-                現在、scikit-learnやPyTorchを用いて機械学習を学んでいます。 
-                
-            </p>             
-        </li>
-        <li>
-            <img src="images/H_C_J_logo.png" alt="HTML, CSS"> 
-            <h3>HTML, CSS, Javascript, jOuery</h3>
-            <p>
-                このPortfolioページの作成に当たり、HTML、CSS、Javascriptを学び直しています。
-                また、新たにjQueryを学んでいます。
-            </p>             
-        </li>
-        <li>
-            <img src="images/java_logo.png" alt="JAVA"> 
-            <h3>JAVA</h3>
-            <p>
-                Spring BootとSpring Tool Suiteを用いて、ローカルの開発環境でJAVAを学び直しています。
-                このページと同様のportfolioをローカル環境に移植し、Spring Web、Thymeleafを用いた変更を行なっています。
-            </p>
-            <h4><a href="Local_JAVA.html">Local environment screenshots and explanations</a></h4>       
-        </li>       
-    </div>
-
-    <!-- Productsの項目 -->
-    <div id="Products">
-        <h2>Products</h2>
-        <h4><a href="#header">Back to top</a></h4>
-
-        <ul>
-            <li><h2><a href="products.html">Product1 : Simplified Vision Simulator</a></h2></li>  
-            <li><h2><a href="contact_input_form1.html">Product2 : Contactフォームの入力画面</a></h2></li>         
-        </ul>
-    </div>
-
-
-    <!--フッタ-->
-    <div id="footer"><small>hiramatsuyuusuke</small></div>
-
-</div>
+  <form action="http://localhost/PHP_test/PHP_test.php" method="get">
+    <p>お名前：<input type="text" name="name"></p>
+    <p>性別：
+      <input type="radio" name="gender" value="男性">男性
+      <input type="radio" name="gender" value="女性">女性
+    </p>
+    <p>血液型：
+      <select name="blood">
+        <option value="AB">AB</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+      </select>
+    </p>
+    <p>ご意見：</p>
+    <p><textarea name="opinion" cols="50" rows="5"></textarea></p>
+    <p><input type="submit" name="submitBtn" value="送信"></p>
+  </form>
 </body>
 </html>
