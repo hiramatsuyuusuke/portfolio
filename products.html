@@ -8,6 +8,24 @@
 
     <body>
 
+        <!------------------------------------
+            非同期処理の画像描画
+        -------------------------------------->
+        <!-- Location画像の描画 -->
+        <h2  id="location">Location
+            <!-- 描画用id=ode_camera -->           
+            <div id="ode_camera"></div>
+        </h2>
+        <!--Vision image画像の描画-->
+        <h2  id="vision_image">Vision image
+            <!-- 描画用id=ode_camera2 -->
+            <div id="ode_camera2"></div>
+        </h2>
+        <!--Image recognition result画像の描画-->
+        <h2  id="image_recognition_result">Image recognition result</h2>
+        <!------------------------------------
+        -------------------------------------->
+
         <!-- ヘッダー画像 -->
         <div id="header">
         <h1><a href="index.html"><img src="images/logo.png" alt="portfolio"></a></h1>
@@ -36,20 +54,6 @@
          <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->        
         <script type="text/javascript" src='./main.js' defer></script>
 
-        
-        <!-- Location -->
-        <h2  id="location">Location
-            <!-- 描画用id=ode_camera -->           
-            <div id="ode_camera"></div>
-        </h2>
-
-        <!--vision-->
-        <h2  id="vision">Vision
-            <!-- 描画用id=ode_camera2 -->
-            <div id="ode_camera2"></div>
-        </h2>
-
-
 
         <!-- 実行ボタン -->
         <div id="run_test">
@@ -60,6 +64,10 @@
         <canvas id="canvas" >
             図形を表示するには、canvasタグをサポートしたブラウザが必要です。
         </canvas>
+        <canvas id="canvas2" >
+            図形を表示するには、canvasタグをサポートしたブラウザが必要です。
+        </canvas>
+
 
          <!-- Vue.jsの読み込み -->
          <!--読み込みのタイミングが微妙なので、deferのつけ方に気を遣う必要がある-->

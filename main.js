@@ -150,8 +150,16 @@ if (canvas.getContext) {
 
     context.font = "20px Arial";
     context.strokeText("SVM",230,30,100);
+}
+
+//図形を描画する。Canvas（<canvas>タグ）を使う。
+const canvas2 = document.getElementById("canvas2");
+if (canvas2.getContext) {
+    var context = canvas2.getContext('2d');
+    //ここに具体的な描画内容を指定する
 
 }
+
 
 
 /*=====================================

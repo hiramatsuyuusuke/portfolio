@@ -25,7 +25,7 @@ body {
 
 
 
-
+/*location画像*/
 #location {
     position:absolute;
     top:150px;
@@ -37,9 +37,8 @@ body {
     background-color:white;     
     width:200px;/*画像を拡大表示*/
 }
-
-
-#vision {
+/*vision image画像*/
+#vision_image {
     position:absolute;
     top:150px;
     left:410px;
@@ -50,6 +49,15 @@ body {
     background-color:white;     
     width:200px;/*画像を拡大表示*/
 }
+/*image_recognition_result*/
+#image_recognition_result{
+    position:absolute;
+    top:290px;
+    left:200px;
+}
+
+
+
 
 
 /*run_test*/
@@ -57,7 +65,7 @@ body {
     width:100px; height:50px;
     position:absolute;
     left:  400px;                /* 左からの位置指定 */
-    top: 50px;                  /* 上からの位置指定 */	   
+    top: 300px;                  /* 上からの位置指定 */	   
     color:navy;		/*文字の色を変える*/	
 }
 
@@ -130,5 +138,11 @@ body {
 
     background-color:white; width:170px;
 }
+#canvas2 {
+    position:absolute;
+    left:  200px;                /* 左からの位置指定 */
+    top: 310px;                  /* 上からの位置指定 */	
 
+    background-color:white; width:170px;
+}
 
