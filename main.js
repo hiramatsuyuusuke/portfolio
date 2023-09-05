@@ -99,9 +99,28 @@ for (var i = 0; i < 63; i++) {
 }
 /*先にデータを読み込んでおく*/
 //html側のIDを取得する
+//north
 const ode_camera2 = document.getElementById("ode_camera2");
 for (var i = 0; i < 63; i++) {
-    const content = '<img src="images_tmp/test_test' +
+    const content = '<img src="images_tmp/test_n' +
+    i + '.jpg"  id="ode_camera2" alt="image">';            
+    ode_camera2.innerHTML = content;
+}
+//east
+for (var i = 0; i < 63; i++) {
+    const content = '<img src="images_tmp/test_e' +
+    i + '.jpg"  id="ode_camera2" alt="image">';            
+    ode_camera2.innerHTML = content;
+}
+//south
+for (var i = 0; i < 63; i++) {
+    const content = '<img src="images_tmp/test_s' +
+    i + '.jpg"  id="ode_camera2" alt="image">';            
+    ode_camera2.innerHTML = content;
+}
+//west
+for (var i = 0; i < 63; i++) {
+    const content = '<img src="images_tmp/test_w' +
     i + '.jpg"  id="ode_camera2" alt="image">';            
     ode_camera2.innerHTML = content;
 }
@@ -353,10 +372,30 @@ const drawTextAsync = async () => {
             const content = '<img src="images_tmp/test' +
             pos_cur + '.jpg" id="ode_camera" alt="image">';      
             ode_camera.innerHTML = content;
-
-            const content2 = '<img src="images_tmp/test_test' +
-            pos_cur + '.jpg" id="ode_camera2" alt="image">';      
-            ode_camera2.innerHTML = content2;           
+            //north
+            if(potential_energy_max == 1){
+                const content2 = '<img src="images_tmp/test_n' +
+                pos_cur + '.jpg" id="ode_camera2" alt="image">';      
+                ode_camera2.innerHTML = content2;           
+            }
+            //east
+            if(potential_energy_max == 2){
+                const content2 = '<img src="images_tmp/test_e' +
+                pos_cur + '.jpg" id="ode_camera2" alt="image">';      
+                ode_camera2.innerHTML = content2;           
+            }
+            //south
+            if(potential_energy_max == 3){
+                const content2 = '<img src="images_tmp/test_s' +
+                pos_cur + '.jpg" id="ode_camera2" alt="image">';      
+                ode_camera2.innerHTML = content2;           
+            }
+            //west
+            if(potential_energy_max == 4){
+                const content2 = '<img src="images_tmp/test_w' +
+                pos_cur + '.jpg" id="ode_camera2" alt="image">';      
+                ode_camera2.innerHTML = content2;           
+            }
 
             await sleep(250);
         }

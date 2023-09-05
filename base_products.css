@@ -23,21 +23,34 @@ body {
 }
 
 
-/*画像を拡大表示*/
-#ode_camera {
+
+
+
+#location {
     position:absolute;
-    top:70px;
-    left:100px;
+    top:150px;
+    left:200px;
+}
+#ode_camera {
+    display:block;		/*ブロック表示にする*/
+    top:10px;
     background-color:white;     
-    width:200px;
+    width:200px;/*画像を拡大表示*/
+}
+
+
+#vision {
+    position:absolute;
+    top:150px;
+    left:410px;
 }
 #ode_camera2 {
-    position:absolute;
-    top:70px;
-    left:210px;
+    display:block;		/*ブロック表示にする*/
+    top:10px;
     background-color:white;     
-    width:200px;
+    width:200px;/*画像を拡大表示*/
 }
+
 
 /*run_test*/
 #run_test button {
