@@ -87,10 +87,7 @@ target7.innerHTML = array7;
 
 
 
-
-
-/*先にデータを読み込んでおく*/
-//html側のIDを取得する
+//html側のIDを取得する.
 const ode_camera = document.getElementById("ode_camera");
 for (var i = 0; i < 63; i++) {
     const content = '<img src="images_tmp/test' +
