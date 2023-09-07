@@ -130,12 +130,12 @@ Skillsの項目
  #Skills {
 	color:navy;
 	text-align:center;
-	padding:20px 0px 0px 0px;
+	padding:60px 0px 0px 0px;
 
  }
 /* Skills内容 */
 #Skills_contests li {
-	margin:20px 0px 0px 40px;		/*左マージン*/		
+	margin:20px 0px 0px 40px;		/*上,左マージン*/		
 	display:block;					/*ブロック表示にする*/
 	width:280px; height:380px;		/*幅と高さ*/
 	background-color:#ffffff;	
@@ -144,7 +144,7 @@ Skillsの項目
 }
 #Skills_contests li img {
 	padding:10px 0px 0px 0px;	/*上パディング*/		
-	width: 40%;
+	height: 20%;
 	margin: auto;
 	display: block;
 }
@@ -158,17 +158,21 @@ Skillsの項目
 }
 #Skills_contests li h4 a {
 	display:block;					/*ブロック表示にする*/
-	margin:0px 0px 0px 20px;	/*上、左マージン*/		
+	margin:0px 0px 0px 20px;	/*左マージン*/		
 	width:240px;	
 }
 
 /*Productsの項目*/
 #Products {
-	clear:both;					/*回り込みを解除*/
+	clear:both;					/*回り込みを解除*/	
 	color:navy;
 	text-align:center;
-	padding:20px 0px 0px 0px;
+	padding:60px 0px 0px 0px;
 
+ }
+ #Products ul {
+	margin:20px 0px 0px 0px;	/*上マージン*/	
+ 	list-style-type:none;	/*リストマーカー無しにする*/
  }
 
 /*Contactの項目*/
