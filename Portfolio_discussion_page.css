@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*========================================================
+全般的なスタイル
+==========================================================*/
+*{
+	margin:0; padding:0;		/*全要素のマージン・パディングをリセット*/
+}
+body {
+	background-color:#cccccc;		/*ページ全体の背景色*/
+	background-image:url("bg_body.png");		/*ウェブページ全体の背景画像*/
+}
+
+
+/*見出しのスタイル*/
+h2{
+	margin:0px 0px 0px 20px;	/*左マージン*/		
+}
+
+/*ここからコメントのスタイル*/
+#comment_items{
+    margin:20px 0px 0px 20px;	/*上、左マージン*/
+    border: solid 3px yellowgreen;
+    display:block;
+    width:400px;
+    border-radius:20px;	/*角を丸くする*/
+    background-color:rgb(225, 244, 185);		/*背景色*/   
+}
+/*idと名前と時間の表示*/
+#comment_items h5{
+    padding-left:10px;
+    background-color:yellowgreen;		/*背景色*/
+    border-radius:10px;	/*角を丸くする*/
+}
+#comment_text{
+    padding:10px;
+    word-wrap: break-word;
+    background-color:rgb(225, 244, 185);		/*背景色*/  
+    display:block;
+}
+
+#comment_remove{
+    text-align:right;
+}
