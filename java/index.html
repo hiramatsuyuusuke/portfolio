@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>prtfolio</title>
+ 	<link rel="stylesheet"  th:href="@{discussion.css}" >   
+</head>
+
+
+<body>
+	
+	<img src="images/logo.png" ></ima>
+	
+	<h2>Discussion</h2>	
+	
+	<!--コメント入力フォーム-->
+	<form method="post" action="/index" th:object"${form1}" style="margin-left:20px">
+	    <h4>
+			お名前<br>
+		    <input type="text" name="name"  required /><br>
+		    コメント内容<br>
+		   	<textarea name="comment_text" cols="40" rows="5"  required ></textarea>
+		   	<br>
+	    	<input type="submit" value="コメントする"/>		   	
+	   	</h4>
+	</form>	
+	
+	
+	<!--コメント表示、削除ボタンフォーム-->
+    <!-- commentsが空でない場合、commentsの要素をcommentに格納する -->
+    <!-- 要素の数ループする -->
+    <div id=comment_items  th:if="${!#lists.isEmpty(comments)}" th:each="comment : ${comments}">
+		<h5>
+		<span>順番:</span>
+		<span th:text="${comment.id}"></span>
+		<span>　名前:</span>		
+		<span th:text="${comment.name}"></span>
+		<span>　日付:</span>
+		<span th:text="${comment.date}"></span>
+		</h5>
+		<p th:text="${comment.text}"></p>    
+		
+		<!--削除ボタン-->
+		<form method="post" action="/index" th:object"${form2}" style="margin-left:20px">
+		    <h4>
+		    	<button id="comment_remove" type='submit' name="remove_id" th:value="${comment.id}">コメントを削除する</button>	   	
+		   	</h4>
+		</form>	      
+    </div>
+
+
+</body>
+</html>
