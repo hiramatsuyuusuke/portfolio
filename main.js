@@ -338,7 +338,9 @@ const drawTextAsync = async () => {
             /*=====================================
             画像描画処理
             =======================================*/
-            
+            await sleep(250);           
+
+
             const content = '<img src="images_tmp/test' +
             pos_cur + '.jpg" id="ode_camera" alt="image">';      
             ode_camera.innerHTML = content;
@@ -367,7 +369,7 @@ const drawTextAsync = async () => {
                 ode_camera2.innerHTML = content2;           
             }
 
-            await sleep(250);
+
         }
  
         run_flag = 0;//ボタン連打無効用フラッグ
