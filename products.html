@@ -1,30 +1,14 @@
 <!DOCTYPE html>
     <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="base_products.css">
+    <link rel="stylesheet" href="product0.css">
         <title>Product 1</title>
  
     </head>
 
     <body>
 
-        <!------------------------------------
-            非同期処理の画像描画
-        -------------------------------------->
-        <!-- Location画像の描画 -->
-        <h2  id="location">Location
-            <!-- 描画用id=ode_camera -->           
-            <div id="ode_camera"></div>
-        </h2>
-        <!--Vision image画像の描画-->
-        <h2  id="vision_image">Vision image
-            <!-- 描画用id=ode_camera2 -->
-            <div id="ode_camera2"></div>
-        </h2>
-        <!--Image recognition result画像の描画-->
-        <h2  id="image_recognition_result">Image recognition result</h2>
-        <!------------------------------------
-        -------------------------------------->
+
 
         <!-- ヘッダー画像 -->
         <div id="header">
@@ -47,7 +31,30 @@
         <div id="test_output6"></div>
         <div id="test_output7"></div>
 
- 
+        <!-- 実行ボタン -->
+        <div id="run_test">
+            <button onclick="drawTextAsync()">run_test</button>
+        </div>
+         <!------------------------------------
+            非同期処理の画像描画
+        -------------------------------------->
+        <!-- Location画像の描画 -->
+        <h2  id="location">Location
+            <!-- 描画用id=ode_camera -->           
+            <div id="ode_camera"></div>
+        </h2>
+        <!--Vision image画像の描画-->
+        <h2  id="vision_image">Vision image
+            <!-- 描画用id=ode_camera2 -->
+            <div id="ode_camera2"></div>
+        </h2>
+        <!--Image recognition result画像の描画-->
+        <h2  id="image_recognition_result">Image recognition result</h2>
+        <!------------------------------------
+        -------------------------------------->
+
+
+
         <!-- 走行シミュレータJavascriptの部分--> 
 
         <!-- 走行シミュレータJavascriptの読み込み--> 
@@ -55,10 +62,7 @@
         <script type="text/javascript" src='./main.js' defer></script>
 
 
-        <!-- 実行ボタン -->
-        <div id="run_test">
-            <button onclick="drawTextAsync()">run_test</button>
-        </div>
+
         
         <!-- 描画用id=canvas -->
         <canvas id="canvas" >
