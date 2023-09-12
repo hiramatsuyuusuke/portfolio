@@ -376,9 +376,3 @@ const drawTextAsync = async () => {
 }
 
 
-const vm = new Vue ({
-    el: '#demo',        //HTMLのid=demoと紐づけ
-    data: {             //入力ボックスの作成
-      zip:'リンゴ'     //入力ボックスのzipに初期値を入れる
-    }
-});
