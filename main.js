@@ -227,8 +227,10 @@ const drawTextAsync = async () => {
             //現在ポジションのアイコンのクリア
             array_field[pos_cur] = 0;            
             //位置エネルギーを-1する
-            potential_energy[pos_cur] -=1;
+            potential_energy[pos_cur] -= 1;
  
+
+
             //東西南北の一次元フィールド座標を計算
             pos_w_next = pos_y * 8 + (pos_x - 1);  
             pos_s_next = (pos_y + 1) * 8 + pos_x;    
@@ -238,33 +240,37 @@ const drawTextAsync = async () => {
             //次に移動するマスの座標を判定
             //西の座標を判定            
             pos_w_flag = 0;
-            if(0 <= pos_x - 1){
-                //フィールドに障害物がないとき西の座標を有効にする
-                if(array_field[pos_w_next] == 0){       
+            if(0 <= pos_x - 1){ //次の座標がフィールド内であるとき
+                
+            //    if(array_field[pos_w_next] == 0){ //次のフィールドに障害物がないとき西の座標を有効にする
+                if(array_SVM_w[pos_cur] == 0){    //次のフィールドに障害物がないと認識したとき,西の座標を有効にする。SVMは「現在」ポジションから周囲の障害物認識を行う。          
                     pos_w_flag = 1;
                 }
             }
             //南の座標を判定
             pos_s_flag = 0;           
-            if(pos_y + 1 <= 7){  
-                //フィールドに障害物がないとき南の座標を有効にする
-                if(array_field[pos_s_next] == 0){                   
+            if(pos_y + 1 <= 7){  //次の座標がフィールド内であるとき
+                //次のフィールドに障害物がないとき南の座標を有効にする
+            //    if(array_field[pos_s_next] == 0){       
+                if(array_SVM_s[pos_cur] == 0){    //次のフィールドに障害物がないと認識したとき,南の座標を有効にする。SVMは「現在」ポジションから周囲の障害物認識を行う。                                 
                     pos_s_flag = 1;            
                 }
             }
             //東の座標を判定
             pos_e_flag = 0;             
-            if(pos_x + 1 <= 7){    
-                //フィールドに障害物がないとき東の座標を有効にする
-                if(array_field[pos_e_next] == 0){                  
+            if(pos_x + 1 <= 7){ //次の座標がフィールド内であるとき    
+                //次のフィールドに障害物がないとき東の座標を有効にする
+            //    if(array_field[pos_e_next] == 0){
+                if(array_SVM_e[pos_cur] == 0){    //次のフィールドに障害物がないと認識したとき,東の座標を有効にする。SVMは「現在」ポジションから周囲の障害物認識を行う。                                  
                     pos_e_flag = 1;                 
                 }
             }
             //北の座標を判定
             pos_n_flag = 0;              
-            if(0 <= pos_y - 1){   
-                //フィールドに障害物がないとき北の座標を有効にする
-                if(array_field[pos_n_next] == 0){                  
+            if(0 <= pos_y - 1){ //次の座標がフィールド内であるとき   
+                //次のフィールドに障害物がないとき北の座標を有効にする
+            //    if(array_field[pos_n_next] == 0){       
+                if(array_SVM_n[pos_cur] == 0){    //次のフィールドに障害物がないと認識したとき,北の座標を有効にする。SVMは「現在」ポジションから周囲の障害物認識を行う。                               
                     pos_n_flag = 1;                 
                 }
             }            
